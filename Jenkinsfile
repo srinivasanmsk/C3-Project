@@ -37,7 +37,7 @@ pipeline {
               sudo docker stop node-app
               sudo docker rm -f node-app
               fi '''
-        sh "sudo docker run -itd -p 8081:8081 --name node-app 828839113893.dkr.ecr.us-east-1.amazonaws.com/c3-assignment:${BUILD_NUMBER}"
+        sh "sudo docker run -itd -p 8080:8080 --name node-app 828839113893.dkr.ecr.us-east-1.amazonaws.com/c3-assignment:${BUILD_NUMBER}"
         }
       }
     }
